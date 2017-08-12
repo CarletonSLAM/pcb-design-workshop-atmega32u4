@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.3.0">
+<eagle version="8.2.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
-<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="mil"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -1184,9 +1183,9 @@ design rules under a new name.</description>
 <attribute name="NAME" x="11.778284375" y="30.4521625" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
 <attribute name="PROD_ID" value="CAP-10057" x="12.667284375" y="30.4521625" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="R1" library="SparkFun-Resistors" package="1206" value=" 22" x="13.9421625" y="18.574715625" smashed="yes">
-<attribute name="NAME" x="14.0691625" y="17.177715625" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
-<attribute name="PROD_ID" value=" " x="13.9421625" y="18.574715625" size="1.778" layer="27" display="off"/>
+<element name="R1" library="SparkFun-Resistors" package="1206" value=" 22" x="13.9421625" y="18.320715625" smashed="yes">
+<attribute name="NAME" x="14.0691625" y="16.923715625" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
+<attribute name="PROD_ID" value=" " x="13.9421625" y="18.320715625" size="1.778" layer="27" display="off"/>
 </element>
 <element name="R4" library="SparkFun-Resistors" package="1206" value=" 22" x="13.9421625" y="22.130715625" smashed="yes">
 <attribute name="NAME" x="13.9421625" y="22.892715625" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
@@ -1294,15 +1293,19 @@ design rules under a new name.</description>
 <contactref element="U$1" pad="17"/>
 <contactref element="Y1" pad="1"/>
 <contactref element="C3" pad="2"/>
-<wire x1="27.0201625" y1="9.303715625" x2="25.7531625" y2="12.393715625" width="0" layer="19" extent="1-1"/>
-<wire x1="27.7851625" y1="3.969715625" x2="27.0201625" y2="9.303715625" width="0" layer="19" extent="1-1"/>
+<wire x1="25.7531625" y1="12.393715625" x2="25.7531625" y2="10.570715625" width="0.254" layer="1"/>
+<wire x1="25.7531625" y1="10.570715625" x2="27.0201625" y2="9.303715625" width="0.254" layer="1"/>
+<wire x1="27.0201625" y1="9.303715625" x2="27.0201625" y2="4.734715625" width="0.254" layer="1"/>
+<wire x1="27.0201625" y1="4.734715625" x2="27.7851625" y2="3.969715625" width="0.254" layer="1"/>
 </signal>
 <signal name="XTAL_N">
 <contactref element="U$1" pad="16"/>
 <contactref element="Y1" pad="2"/>
 <contactref element="C6" pad="2"/>
-<wire x1="23.7241625" y1="9.303715625" x2="24.9531625" y2="12.393715625" width="0" layer="19" extent="1-1"/>
-<wire x1="22.7051625" y1="3.969715625" x2="23.7241625" y2="9.303715625" width="0" layer="19" extent="1-1"/>
+<wire x1="24.9531625" y1="12.393715625" x2="24.9531625" y2="10.532715625" width="0.254" layer="1"/>
+<wire x1="24.9531625" y1="10.532715625" x2="23.7241625" y2="9.303715625" width="0.254" layer="1"/>
+<wire x1="23.7241625" y1="9.303715625" x2="23.7241625" y2="4.988715625" width="0.254" layer="1"/>
+<wire x1="23.7241625" y1="4.988715625" x2="22.7051625" y2="3.969715625" width="0.254" layer="1"/>
 </signal>
 <signal name="MISO">
 <contactref element="ICSP" pad="1"/>
@@ -1357,27 +1360,34 @@ design rules under a new name.</description>
 <contactref element="D2" pad="A"/>
 <contactref element="J2" pad="7"/>
 <contactref element="D4" pad="1"/>
+<wire x1="6.738" y1="32.004" x2="7.366" y2="32.004" width="0.508" layer="1"/>
+<wire x1="7.366" y1="32.004" x2="10.16" y2="29.21" width="0.508" layer="1"/>
+<wire x1="10.16" y1="29.21" x2="12.509446875" y2="29.21" width="0.508" layer="1"/>
+<wire x1="12.509446875" y1="29.21" x2="12.667284375" y2="29.0521625" width="0.508" layer="1"/>
+<wire x1="12.667284375" y1="29.0521625" x2="15.8471625" y2="29.0521625" width="0.508" layer="1"/>
+<wire x1="15.8471625" y1="29.0521625" x2="15.875" y2="29.08" width="0.508" layer="1"/>
+<wire x1="15.875" y1="29.08" x2="19.685" y2="29.08" width="0.508" layer="1"/>
+<wire x1="19.685" y1="29.08" x2="19.685" y2="26.061878125" width="0.508" layer="1"/>
+<wire x1="19.685" y1="26.061878125" x2="21.7531625" y2="23.993715625" width="0.508" layer="1"/>
+<wire x1="19.685" y1="29.08" x2="24.029871875" y2="29.08" width="0.508" layer="1"/>
+<wire x1="24.029871875" y1="29.08" x2="24.351284375" y2="29.4014125" width="0.508" layer="1"/>
 <wire x1="24.351284375" y1="29.4014125" x2="31.75" y2="31.75" width="0" layer="19" extent="1-1"/>
-<wire x1="19.685" y1="29.08" x2="24.351284375" y2="29.4014125" width="0" layer="19" extent="1-1"/>
-<wire x1="15.875" y1="29.08" x2="19.685" y2="29.08" width="0" layer="19" extent="1-1"/>
-<wire x1="12.667284375" y1="29.0521625" x2="15.875" y2="29.08" width="0" layer="19" extent="1-1"/>
-<wire x1="21.7531625" y1="23.993715625" x2="19.685" y2="29.08" width="0" layer="19" extent="1-1"/>
 <wire x1="19.9531625" y1="21.393715625" x2="21.7531625" y2="23.993715625" width="0" layer="19" extent="1-1"/>
 <wire x1="19.9531625" y1="17.393715625" x2="19.9531625" y2="21.393715625" width="0" layer="19" extent="1-1"/>
 <wire x1="23.3531625" y1="12.393715625" x2="19.9531625" y2="17.393715625" width="0" layer="19" extent="1-1"/>
-<wire x1="6.738" y1="32.004" x2="12.667284375" y2="29.0521625" width="0" layer="19" extent="1-1"/>
 <wire x1="15.691284375" y1="12.2911625" x2="19.9531625" y2="17.393715625" width="0" layer="19" extent="1-1"/>
 <wire x1="15.3421625" y1="9.271965625" x2="15.691284375" y2="12.2911625" width="0" layer="19" extent="1-1"/>
 <wire x1="29.7531625" y1="23.993715625" x2="24.351284375" y2="29.4014125" width="0" layer="19" extent="1-1"/>
-<wire x1="31.5531625" y1="14.993715625" x2="23.3531625" y2="12.393715625" width="0" layer="19" extent="1-1"/>
-<wire x1="35.424284375" y1="12.6721625" x2="31.5531625" y2="14.993715625" width="0" layer="19" extent="1-1"/>
 <wire x1="35.484" y1="20.41" x2="29.7531625" y2="23.993715625" width="0" layer="19" extent="1-1"/>
+<wire x1="31.5531625" y1="14.993715625" x2="35.484" y2="20.41" width="0" layer="19" extent="1-1"/>
+<wire x1="35.424284375" y1="12.6721625" x2="31.5531625" y2="14.993715625" width="0" layer="19" extent="1-1"/>
 <wire x1="4.731715625" y1="6.5048375" x2="15.3421625" y2="9.271965625" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$1">
 <contactref element="R3" pad="1"/>
 <contactref element="D1" pad="A"/>
-<wire x1="24.351284375" y1="32.2014125" x2="27.0788375" y2="32.201284375" width="0" layer="19" extent="1-1"/>
+<wire x1="24.351284375" y1="32.2014125" x2="27.078709375" y2="32.2014125" width="0.508" layer="1"/>
+<wire x1="27.078709375" y1="32.2014125" x2="27.0788375" y2="32.201284375" width="0.508" layer="1"/>
 </signal>
 <signal name="RX_LED">
 <contactref element="U$1" pad="8"/>
@@ -1484,32 +1494,40 @@ design rules under a new name.</description>
 <signal name="USB_D_N">
 <contactref element="J1" pad="D-"/>
 <contactref element="R4" pad="1"/>
-<wire x1="8.514315625" y1="20.589015625" x2="12.5421625" y2="22.130715625" width="0" layer="19" extent="1-1"/>
+<wire x1="8.514315625" y1="20.589015625" x2="11.0004625" y2="20.589015625" width="0.508" layer="1"/>
+<wire x1="11.0004625" y1="20.589015625" x2="12.5421625" y2="22.130715625" width="0.508" layer="1"/>
 </signal>
 <signal name="USB_VCC" class="3">
 <contactref element="J1" pad="VBUS"/>
 <contactref element="F1" pad="1"/>
-<wire x1="8.514315625" y1="21.389015625" x2="7.496" y2="28.448" width="0" layer="19" extent="1-1"/>
+<wire x1="7.496" y1="28.448" x2="7.496" y2="28.2039125" width="0.508" layer="1"/>
+<wire x1="7.496" y1="28.2039125" x2="10.221515625" y2="25.478396875" width="0.508" layer="1"/>
+<wire x1="10.221515625" y1="23.096215625" x2="8.514315625" y2="21.389015625" width="0.508" layer="1"/>
+<wire x1="10.221515625" y1="25.478396875" x2="10.221515625" y2="23.096215625" width="0.508" layer="1"/>
 </signal>
 <signal name="USB_D_P">
 <contactref element="J1" pad="D+"/>
 <contactref element="R1" pad="1"/>
-<wire x1="8.514315625" y1="19.789015625" x2="12.5421625" y2="18.574715625" width="0" layer="19" extent="1-1"/>
+<wire x1="8.514315625" y1="19.789015625" x2="11.0738625" y2="19.789015625" width="0.508" layer="1"/>
+<wire x1="11.0738625" y1="19.789015625" x2="12.5421625" y2="18.320715625" width="0.508" layer="1"/>
 </signal>
 <signal name="USB_D1_P">
 <contactref element="R1" pad="2"/>
 <contactref element="U$1" pad="4"/>
-<wire x1="15.3421625" y1="18.574715625" x2="19.9531625" y2="19.793715625" width="0" layer="19" extent="1-1"/>
+<wire x1="19.9531625" y1="19.793715625" x2="16.8151625" y2="19.793715625" width="0.508" layer="1"/>
+<wire x1="16.8151625" y1="19.793715625" x2="15.3421625" y2="18.320715625" width="0.508" layer="1"/>
 </signal>
 <signal name="USB_D1_N">
 <contactref element="R4" pad="2"/>
 <contactref element="U$1" pad="3"/>
-<wire x1="15.3421625" y1="22.130715625" x2="19.9531625" y2="20.593715625" width="0" layer="19" extent="1-1"/>
+<wire x1="19.9531625" y1="20.593715625" x2="16.8791625" y2="20.593715625" width="0.508" layer="1"/>
+<wire x1="16.8791625" y1="20.593715625" x2="15.3421625" y2="22.130715625" width="0.508" layer="1"/>
 </signal>
 <signal name="N$4">
 <contactref element="F1" pad="2"/>
 <contactref element="D3" pad="A"/>
-<wire x1="4.696" y1="28.448" x2="4.438" y2="32.004" width="0" layer="19" extent="1-1"/>
+<wire x1="4.438" y1="32.004" x2="4.438" y2="28.706" width="0.508" layer="1"/>
+<wire x1="4.438" y1="28.706" x2="4.696" y2="28.448" width="0.508" layer="1"/>
 </signal>
 <signal name="N$2">
 <contactref element="D7" pad="C"/>
@@ -1530,7 +1548,7 @@ Since Version 6.2.2 text objects can contain more than one line,
 which will not be processed correctly with this version.
 </note>
 <note version="8.2" severity="warning">
-Since Version 8.2, EAGLE supports online libraries. The ids
+Since Version 8.2, Eagle supports online libraries. The ids
 of those online libraries will not be understood (or retained)
 with this version.
 </note>
