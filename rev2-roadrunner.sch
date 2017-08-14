@@ -153,7 +153,7 @@
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
-<library name="SparkFun-Aesthetics" urn="urn:adsk.eagle:library:507">
+<library name="SparkFun-Aesthetics">
 <description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
 In this library you'll find non-functional items- supply symbols, logos, notations, frame blocks, etc.&lt;br&gt;&lt;br&gt;
 We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
@@ -472,7 +472,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 </deviceset>
 </devicesets>
 </library>
-<library name="SparkFun-Clocks" urn="urn:adsk.eagle:library:511">
+<library name="SparkFun-Clocks">
 <description>&lt;h3&gt;SparkFun Clocks, Oscillators and Resonators&lt;/h3&gt;
 This library contains the real-time clocks, oscillators, resonators, and crystals we use. 
 &lt;br&gt;
@@ -607,7 +607,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </deviceset>
 </devicesets>
 </library>
-<library name="SparkFun-PowerSymbols" urn="urn:adsk.eagle:library:530">
+<library name="SparkFun-PowerSymbols">
 <description>&lt;h3&gt;SparkFun Power Symbols&lt;/h3&gt;
 This library contains power, ground, and voltage-supply symbols.
 &lt;br&gt;
@@ -5001,44 +5001,44 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </classes>
 <parts>
 <part name="ICSP" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="AVR_SPI_PRG_6" device="NS"/>
-<part name="FRAME1" library="SparkFun-Aesthetics" library_urn="urn:adsk.eagle:library:507" deviceset="FRAME-A4L" device=""/>
+<part name="FRAME1" library="SparkFun-Aesthetics" deviceset="FRAME-A4L" device=""/>
 <part name="D1" library="SparkFun-LED" deviceset="LED-BLUE" device="1206" value="BLUE"/>
 <part name="J1" library="SparkFun-Connectors" deviceset="USB_MINI-B" device="_SMT"/>
-<part name="SUPPLY4" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
-<part name="SUPPLY6" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
-<part name="GND9" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="GND7" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="GND10" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
+<part name="SUPPLY4" library="SparkFun-PowerSymbols" deviceset="5V" device=""/>
+<part name="SUPPLY6" library="SparkFun-PowerSymbols" deviceset="5V" device=""/>
+<part name="GND9" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="GND7" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="GND10" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="R7" library="SparkFun-Resistors" deviceset="RESISTOR" device="1206" value="1k"/>
 <part name="R2" library="SparkFun-Resistors" deviceset="RESISTOR" device="1206" value="1k"/>
 <part name="R3" library="SparkFun-Resistors" deviceset="RESISTOR" device="1206" value=" 1k"/>
 <part name="R8" library="SparkFun-Resistors" deviceset="RESISTOR" device="1206" value="1k"/>
 <part name="S1" library="switch-omron" library_urn="urn:adsk.eagle:library:377" deviceset="10-XX" device=""/>
 <part name="D7" library="SparkFun-LED" deviceset="LED-YELLOW" device="LILYPAD" value="Yellow"/>
-<part name="SUPPLY3" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
+<part name="SUPPLY3" library="SparkFun-PowerSymbols" deviceset="5V" device=""/>
 <part name="D2" library="SparkFun-LED" deviceset="LED-RED" device="1206" value="RED"/>
 <part name="U$1" library="SparkFun-IC-Microcontroller" deviceset="ATMEGA32U4" device="TQFP-44" value="32U4"/>
 <part name="C1" library="SparkFun-Capacitors" deviceset="1.0UF" device="-1206-50V-10%" value="1.0uF"/>
 <part name="C2" library="SparkFun-Capacitors" deviceset="10UF" device="-1206-6.3V-20%" value="10uF"/>
 <part name="R1" library="SparkFun-Resistors" deviceset="RESISTOR" device="1206" value=" 22"/>
 <part name="R4" library="SparkFun-Resistors" deviceset="RESISTOR" device="1206" value=" 22"/>
-<part name="Y1" library="SparkFun-Clocks" library_urn="urn:adsk.eagle:library:511" deviceset="CRYSTAL-16MHZ" device="PTH-HC49US" value="16MHz"/>
+<part name="Y1" library="SparkFun-Clocks" deviceset="CRYSTAL-16MHZ" device="PTH-HC49US" value="16MHz"/>
 <part name="C3" library="SparkFun-Capacitors" deviceset="10UF" device="-1206-6.3V-20%" value="22pF"/>
 <part name="C6" library="SparkFun-Capacitors" deviceset="10UF" device="-1206-6.3V-20%" value="22pF"/>
-<part name="GND1" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="SUPPLY1" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
-<part name="GND2" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="GND3" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
+<part name="GND1" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="SUPPLY1" library="SparkFun-PowerSymbols" deviceset="5V" device=""/>
+<part name="GND2" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="GND3" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="D3" library="SparkFun-DiscreteSemi" deviceset="DIODE" device="-BAS16J" value="250mA/100V"/>
 <part name="F1" library="SparkFun-Fuses" deviceset="PPTC" device="_HALF-AMP" value="6V/0.5A"/>
 <part name="C4" library="SparkFun-Capacitors" deviceset="1.0UF" device="-1206-50V-10%" value="0.1uF"/>
 <part name="C5" library="SparkFun-Capacitors" deviceset="1.0UF" device="-1206-50V-10%" value="1.0uF"/>
-<part name="GND4" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="SUPPLY2" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
+<part name="GND4" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="SUPPLY2" library="SparkFun-PowerSymbols" deviceset="5V" device=""/>
 <part name="D4" library="SparkFun-LED" deviceset="WS2812B" device="" value="WS2812B"/>
 <part name="J3" library="SparkFun-Connectors" deviceset="CONN_10" device="&quot;"/>
-<part name="SUPPLY5" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
-<part name="GND5" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
+<part name="SUPPLY5" library="SparkFun-PowerSymbols" deviceset="5V" device=""/>
+<part name="GND5" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="J5" library="SparkFun-Connectors" deviceset="CONN_08" device="&quot;"/>
 <part name="J2" library="SparkFun-Connectors" deviceset="CONN_05" device=""/>
 </parts>
